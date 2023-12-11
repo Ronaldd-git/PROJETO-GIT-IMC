@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator IMC</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main id="container">
+        <selection id="img">
+            <img src="/training.img/treino.svg" alt="img de treino">
+        </selection>
+    </main>
+<section id="calculator">
+    <form id="form">
+    <h1 id="title">
+        calculadora - IMC
+    </h1>
+    <div class="input-box">
+        <label for="weight">
+            peso em kg
+        </label>
+        <div class="input-field">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input type="number" id="weight" required>
+            <span>
+                kg
+            </span>
+        </div>
+    </div>
+    <div class="input-box">
+        <label for="height">
+            altura em metros    
+        </label>
+        <div class="input-field">
+            <i class="fa-solid fa-ruler"></i>
+            <input type="text" id="height" required pattern="([0-9]+.{0,1}[0-9],{0,1})[0-9]">
+            <span>
+                kg
+            </span>
+        </div>
+    </div>
+    <button id="calculate">
+        calcular
+    </button>
+</form>
+<div id="infos" class="hidden">
+    <div id="result">
+        <div id="bmi">
+            <span id="value"></span>
+            <span>seu IMC</span>
+        </div>
+        <div id="description">
+            <span></span>
+        </div>
+    </div>
+    <div id="more_info">
+        <a href="https://www.cuidamosjuntos.com.br/?cmp=7412d239-988a-44d7-9c5f-60a63282bc31&ttype=PS&gclid=CjwKCAiAjrarBhAWEiwA2qWdCBLFOfq_oORoVeSJZaZECSYPmHmO49hQL-N41lTBktXs9OJgSWk-ShoCk2kQAvD_BwE" target="_blank">
+            mais informações sobre o IMC
+            <font-awesome-icon :icon="['fas', 'arrow-up-right-from-square']" />
+        </a>
+    </div>
+</div>
+</section>
+
+
+    <script src="/codigos/script.js"></script>
+</body>
+</html>
