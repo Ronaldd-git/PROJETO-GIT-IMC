@@ -31,4 +31,7 @@ form.addEventListener('submit', function(event){
         value.textContent = bmi.replace('.' , ',');
         document.getElementById('description').textContent = description
 })  
+function formatarAltura(height) {
+    // Substitui vírgulas por pontos
+    input.value = input.value.replace('.', ',');}
 
